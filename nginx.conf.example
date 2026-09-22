@@ -3,7 +3,7 @@ server {
     listen [::]:80;
 
     server_name propuesta.example.com;
-    root /var/www/aeroops;
+    root /var/www/flight-support;
     index index.html;
 
     location / {
