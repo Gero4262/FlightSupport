@@ -1,12 +1,10 @@
-# AeroOps GT — propuesta web
+# Flight Support — propuesta web
 
 Demo interactiva para presentar una propuesta de servicios de operaciones aeronáuticas.
 
 ## GitHub Pages
 
-El proyecto incluye un flujo de GitHub Actions en `.github/workflows/pages.yml`. Cada cambio enviado a la rama `main` reconstruye `dist/` y publica la versión resultante en GitHub Pages.
-
-En la configuración del repositorio, Pages debe utilizar **GitHub Actions** como origen.
+La publicación utiliza GitHub Pages desde la rama `main` y el directorio raíz. Los archivos `index.html`, `styles.css` y `app.js` forman la versión pública.
 
 ## Desarrollo local
 
