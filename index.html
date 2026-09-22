@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Propuesta interactiva para una plataforma digital de servicios de operaciones aeronáuticas." />
+    <meta name="theme-color" content="#07111f" />
+    <title>AeroOps GT — Propuesta digital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="atmosphere" aria-hidden="true">
+      <span class="orb orb-one"></span>
+      <span class="orb orb-two"></span>
+      <span class="grid"></span>
+    </div>
+
+    <header class="topbar">
+      <a class="brand" href="#inicio" data-route="inicio" aria-label="AeroOps GT, ir al inicio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img"><path d="M8 31.5 24 8l16 23.5-16-7.4L8 31.5Z"/><path d="m17 34 7-3.3 7 3.3-7 6-7-6Z"/></svg>
+        </span>
+        <span><strong>AEROOPS</strong><small>GUATEMALA · NOMBRE PROVISIONAL</small></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navegación principal">
+        <a href="#inicio" data-route="inicio" class="active">Inicio</a>
+        <a href="#nosotros" data-route="nosotros">Nosotros</a>
+        <a href="#servicios" data-route="servicios">Servicios</a>
+        <a href="#aeronaves" data-route="aeronaves">Aeronaves</a>
+        <a href="#ubicaciones" data-route="ubicaciones">Ubicaciones</a>
+        <a href="#recursos" data-route="recursos">Recursos</a>
+        <a href="#operaciones" data-route="operaciones">Operaciones</a>
+        <a href="#contacto" data-route="contacto">Contacto</a>
+      </nav>
+
+      <div class="top-actions">
+        <button class="language" id="languageToggle" type="button" aria-label="Cambiar idioma">
+          <span class="active">ES</span><span>EN</span>
+        </button>
+        <button class="menu-button" id="menuButton" type="button" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <nav aria-label="Navegación móvil">
+        <a href="#inicio" data-route="inicio">01 <span>Inicio</span></a>
+        <a href="#nosotros" data-route="nosotros">02 <span>Nosotros</span></a>
+        <a href="#servicios" data-route="servicios">03 <span>Servicios</span></a>
+        <a href="#aeronaves" data-route="aeronaves">04 <span>Aeronaves</span></a>
+        <a href="#ubicaciones" data-route="ubicaciones">05 <span>Ubicaciones</span></a>
+        <a href="#recursos" data-route="recursos">06 <span>Recursos</span></a>
+        <a href="#operaciones" data-route="operaciones">07 <span>Operaciones</span></a>
+        <a href="#contacto" data-route="contacto">08 <span>Contacto</span></a>
+      </nav>
+    </aside>
+
+    <main id="app" tabindex="-1" aria-live="polite">
+      <section class="view active" data-view="inicio">
+        <div class="hero">
+          <div class="hero-copy reveal">
+            <div class="eyebrow"><span></span> PROPUESTA DIGITAL · VERSIÓN PRIVADA</div>
+            <h1>Coordinación en tierra.<br /><em>Confianza en el aire.</em></h1>
+            <p>Una presencia digital bilingüe para presentar capacidades, publicar operaciones y convertir consultas en solicitudes claras, las 24 horas.</p>
+            <div class="hero-actions">
+              <button class="button primary" data-route="servicios">Explorar la propuesta <span>↗</span></button>
+              <button class="button ghost" data-route="contacto">Ver inversión</button>
+            </div>
+            <div class="metric-row">
+              <div><strong>08</strong><span>áreas de servicio</span></div>
+              <div><strong>ES / EN</strong><span>arquitectura bilingüe</span></div>
+              <div><strong>24/7</strong><span>presencia operativa</span></div>
+            </div>
+          </div>
+
+          <div class="radar-card reveal delay-1" aria-label="Vista conceptual de cobertura operativa">
+            <div class="radar-head"><span>LIVE OPERATIONS</span><span class="status"><i></i> ONLINE</span></div>
+            <div class="radar">
+              <span class="ring r1"></span><span class="ring r2"></span><span class="ring r3"></span>
+              <span class="radar-line"></span>
+              <span class="route-path path-one"></span>
+              <span class="route-path path-two"></span>
+              <span class="point p1"><i></i><b>GUA</b></span>
+              <span class="point p2"><i></i><b>MIA</b></span>
+              <span class="point p3"><i></i><b>PTY</b></span>
+              <span class="plane">✦</span>
+            </div>
+            <div class="flight-strip">
+              <div><small>BASE</small><strong>MGGT · GUA</strong></div>
+              <div><small>ESTADO</small><strong class="cyan">COORDINADO</strong></div>
+              <div><small>RESPUESTA</small><strong>&lt; 30 MIN</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mission-strip reveal delay-2">
+          <span>PLANIFICACIÓN DE VUELO</span><i></i><span>GROUND HANDLING</span><i></i><span>COMBUSTIBLE</span><i></i><span>PERMISOS</span><i></i><span>METEOROLOGÍA</span>
+        </div>
+      </section>
+
+      <section class="view" data-view="nosotros">
+        <div class="page-intro reveal">
+          <div><span class="section-number">01 / NOSOTROS</span><h2>Una marca que transmite<br /><em>control y confianza.</em></h2></div>
+          <p>La narrativa presenta experiencia, capacidad de respuesta y coordinación local sin saturar al visitante con lenguaje técnico.</p>
+        </div>
+        <div class="split-grid">
+          <article class="statement-card reveal">
+            <span class="card-label">PROPÓSITO</span>
+            <h3>Hacer que cada operación se sienta simple, incluso cuando no lo es.</h3>
+            <p>La propuesta reúne información crítica, cobertura y un canal de contacto directo en una experiencia sobria y confiable.</p>
+          </article>
+          <div class="principles reveal delay-1">
+            <article><span>01</span><div><h3>Experiencia verificable</h3><p>Espacios para certificaciones, alianzas, años de operación y evidencia real.</p></div></article>
+            <article><span>02</span><div><h3>Respuesta operativa</h3><p>Llamados a la acción visibles para solicitudes urgentes o planificadas.</p></div></article>
+            <article><span>03</span><div><h3>Alcance internacional</h3><p>Arquitectura de contenido preparada para español e inglés.</p></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" data-view="servicios">
+        <div class="page-intro reveal">
+          <div><span class="section-number">02 / SERVICIOS</span><h2>Todo lo necesario,<br /><em>en una sola coordinación.</em></h2></div>
+          <p>Una estructura modular permite destacar servicios prioritarios y ampliar la oferta sin reconstruir el sitio.</p>
+        </div>
+        <div class="service-grid reveal delay-1" id="serviceGrid"></div>
+        <div class="service-detail" id="serviceDetail" aria-live="polite"></div>
+      </section>
+
+      <section class="view" data-view="aeronaves">
+        <div class="page-intro reveal">
+          <div><span class="section-number">03 / AERONAVES</span><h2>Capacidad para cada<br /><em>tipo de misión.</em></h2></div>
+          <p>Fichas visuales comunican compatibilidad operativa para aviación ejecutiva, comercial y carga.</p>
+        </div>
+        <div class="aircraft-tabs reveal" role="tablist" aria-label="Tipos de aeronave">
+          <button class="active" data-aircraft="executive" role="tab">Jets ejecutivos</button>
+          <button data-aircraft="commercial" role="tab">Comerciales</button>
+          <button data-aircraft="cargo" role="tab">Carga</button>
+        </div>
+        <div class="aircraft-stage reveal delay-1" id="aircraftStage"></div>
+      </section>
+
+      <section class="view" data-view="ubicaciones">
+        <div class="page-intro reveal">
+          <div><span class="section-number">04 / UBICACIONES</span><h2>Base local.<br /><em>Alcance regional.</em></h2></div>
+          <p>La primera versión prioriza Guatemala y deja lista la estructura para agregar aeropuertos, países y oficinas.</p>
+        </div>
+        <div class="location-layout">
+          <div class="map-panel reveal">
+            <svg viewBox="0 0 760 440" aria-label="Mapa conceptual de cobertura regional">
+              <path class="land" d="M72 80c80-41 162-33 224 10 34 24 84 42 147 31 56-10 87 15 122 57 29 35 59 52 126 68l-19 59-105-12-65 54-98-25-72 52-60-64-94-23-42-76-76-26 12-105Z"/>
+              <path class="route" d="M330 252C263 173 183 153 105 166M334 252c85-97 177-108 284-49M334 252c66 24 128 64 186 115"/>
+              <circle class="hub-ring" cx="334" cy="252" r="18"/><circle class="hub" cx="334" cy="252" r="6"/>
+              <circle class="city" cx="105" cy="166" r="4"/><circle class="city" cx="618" cy="203" r="4"/><circle class="city" cx="520" cy="367" r="4"/>
+            </svg>
+            <div class="map-caption"><span><i class="cyan-dot"></i> Base operativa</span><span><i class="line-dot"></i> Cobertura coordinada</span></div>
+          </div>
+          <div class="airport-list reveal delay-1">
+            <article class="featured"><span>BASE PRINCIPAL</span><h3>La Aurora</h3><p>MGGT · Guatemala City</p><b>COBERTURA PROPUESTA</b></article>
+            <article><span>REGIONAL</span><h3>Mundo Maya</h3><p>MGMM · Petén</p></article>
+            <article><span>EXPANSIÓN</span><h3>Centroamérica</h3><p>Red de aliados · Fase 2</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" data-view="recursos">
+        <div class="page-intro reveal">
+          <div><span class="section-number">05 / RECURSOS</span><h2>Información útil,<br /><em>antes de despegar.</em></h2></div>
+          <p>Un centro de recursos fortalece el posicionamiento orgánico y ayuda al cliente a preparar su operación.</p>
+        </div>
+        <div class="resource-grid reveal delay-1">
+          <article><span>01</span><div class="resource-icon">⌁</div><h3>Autoridades y normativa</h3><p>Enlaces a DGAC, requisitos operacionales y referencias oficiales.</p><button>Ver estructura <b>→</b></button></article>
+          <article><span>02</span><div class="resource-icon">◌</div><h3>Clima y aeropuertos</h3><p>Accesos rápidos a meteorología, NOTAM y datos aeroportuarios.</p><button>Ver estructura <b>→</b></button></article>
+          <article><span>03</span><div class="resource-icon">▤</div><h3>Guías para operadores</h3><p>Documentación, preguntas frecuentes y listas previas a la llegada.</p><button>Ver estructura <b>→</b></button></article>
+        </div>
+        <p class="prototype-note">Los enlaces externos se conectarán únicamente a fuentes aprobadas durante la carga de contenido.</p>
+      </section>
+
+      <section class="view" data-view="operaciones">
+        <div class="page-intro reveal">
+          <div><span class="section-number">06 / OPERACIONES</span><h2>Historias que demuestran<br /><em>capacidad real.</em></h2></div>
+          <p>El administrador podrá publicar casos, servicios especiales y logros para mantener el sitio vivo.</p>
+        </div>
+        <div class="operations-grid reveal delay-1">
+          <article class="operation-feature">
+            <div class="operation-visual"><span class="visual-code">OPS / 001</span><div class="runway"><i></i></div><span class="aircraft-glyph">✈</span></div>
+            <div class="operation-copy"><span>CASO DEMOSTRATIVO · GROUND HANDLING</span><h3>Escala ejecutiva coordinada en menos de 90 minutos</h3><p>Estructura editorial preparada para contar el reto, la respuesta y el resultado con fotografías autorizadas.</p><button class="text-link">Leer operación <b>↗</b></button></div>
+          </article>
+          <aside class="editor-card"><span>PANEL EDITORIAL</span><h3>Publicar sin tocar código</h3><ul><li><i>✓</i> Título, fecha y categoría</li><li><i>✓</i> Galería optimizada</li><li><i>✓</i> Borrador y publicación</li><li><i>✓</i> Estructura bilingüe</li></ul><div class="mini-status"><i></i> Función prevista en implementación</div></aside>
+        </div>
+      </section>
+
+      <section class="view" data-view="contacto">
+        <div class="page-intro reveal">
+          <div><span class="section-number">07 / PROPUESTA COMERCIAL</span><h2>Inversión clara.<br /><em>Crecimiento modular.</em></h2></div>
+          <p>Rangos orientativos en quetzales. La cifra final se confirma tras validar contenido, dominio, correo y alcance técnico.</p>
+        </div>
+
+        <div class="proposal-switcher reveal" role="tablist" aria-label="Detalle comercial">
+          <button class="active" data-proposal="packages">Paquetes</button>
+          <button data-proposal="deliverables">Entregables</button>
+          <button data-proposal="timeline">Cronograma</button>
+          <button data-proposal="care">Cuidado mensual</button>
+        </div>
+        <div id="proposalPanel" class="proposal-panel reveal delay-1"></div>
+
+        <div class="contact-band reveal">
+          <div><span>PRÓXIMO PASO</span><h3>Convertir esta dirección visual en una operación digital real.</h3><p>Reunión de validación · alcance · contenido · propuesta final</p></div>
+          <a class="button primary" href="mailto:contacto@dominio-por-confirmar.gt?subject=Validación%20de%20propuesta%20AeroOps">Solicitar reunión <span>↗</span></a>
+        </div>
+        <p class="prototype-note">Correo demostrativo: se sustituirá por la dirección corporativa confirmada antes del lanzamiento.</p>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 AEROOPS GT · DEMO PRIVADA</span>
+      <span>PROPUESTA SUJETA A VALIDACIÓN DE ALCANCE E IMPUESTOS</span>
+    </footer>
+
+    <div class="toast" id="toast" role="status"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
