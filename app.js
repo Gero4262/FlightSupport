@@ -16,30 +16,47 @@ const aircraft = {
 };
 
 const proposals = {
-  packages: `
+  investment: `
     <div class="package-grid">
-      <article class="package-card"><span>BASE DIGITAL</span><h3>Esencial</h3><div class="price"><strong>Q 8,500 – Q 12,500</strong><small>implementación · Q 850 – Q 1,250 / mes</small></div><ul><li>Sitio informativo responsive</li><li>Secciones esenciales en español</li><li>Formulario y analítica básica</li><li>Mantenimiento preventivo</li></ul><button data-package="Esencial">Explorar paquete</button></article>
-      <article class="package-card recommended"><b class="package-badge">RECOMENDADO</b><span>PRESENCIA OPERATIVA</span><h3>Operacional</h3><div class="price"><strong>Q 14,500 – Q 22,000</strong><small>implementación · Q 1,450 – Q 2,400 / mes</small></div><ul><li>Todo lo incluido en Esencial</li><li>ES / EN y módulo Operaciones</li><li>Editor de historias y recursos</li><li>Monitoreo, respaldo y reporte</li></ul><button data-package="Operacional">Explorar paquete</button></article>
-      <article class="package-card"><span>ESCALA Y CONTENIDO</span><h3>Premium Ops</h3><div class="price"><strong>Q 24,000 – Q 38,000</strong><small>implementación · Q 2,800 – Q 4,500 / mes</small></div><ul><li>Todo lo incluido en Operacional</li><li>SEO y contenido de lanzamiento</li><li>Integraciones y automatizaciones</li><li>Soporte prioritario</li></ul><button data-package="Premium Ops">Explorar paquete</button></article>
+      <article class="package-card"><span>SERVICIOS PROFESIONALES</span><h3>Diseño y desarrollo</h3><div class="price"><strong>Q 20,500.00</strong><small>tarifa integral preferencial</small></div><ul><li>Descubrimiento, arquitectura y UI/UX</li><li>Identidad visual y firma de correo</li><li>Frontend, animaciones y panel administrativo</li><li>Seguridad, i18n, SEO, QA y DevOps</li></ul></article>
+      <article class="package-card"><span>PRIMER AÑO</span><h3>Infraestructura</h3><div class="price"><strong>Q 2,500.00</strong><small>hosting, dominio y gestión técnica</small></div><ul><li>Hosting web por 12 meses: Q1,500</li><li>Recuperación/transferencia: Q750</li><li>Renovación estimada de dominio: Q250</li><li>SSL y pruebas de producción</li></ul></article>
+      <article class="package-card recommended"><b class="package-badge">TOTAL INICIAL</b><span>INVERSIÓN RECOMENDADA</span><h3>Flight Support</h3><div class="price"><strong>Q 23,000.00</strong><small>servicios + infraestructura del primer año</small></div><ul><li>Alcance funcional completo</li><li>Hasta 5 sesiones de seguimiento</li><li>Capacitación y despliegue</li><li>30 días de garantía de errores</li></ul></article>
+    </div>
+    <div class="detail-grid quote-options">
+      <article><span>OPCIONAL</span><h3>Migración de correo</h3><p>Q1,800.00 · Hasta 3 buzones y 25 GB agregados.</p></article>
+      <article><span>FASE POSTERIOR</span><h3>Idioma inglés</h3><p>Q2,500.00 – Q4,000.00 · Sin traducción profesional.</p></article>
+      <article><span>CONTINUIDAD</span><h3>Plan mensual</h3><p>Q500.00 / mes · Monitoreo, backups y soporte menor.</p></article>
+      <article><span>ADICIONAL</span><h3>Sesión extra</h3><p>Q250.00 por sesión fuera de las cinco incluidas.</p></article>
     </div>`,
   deliverables: `
     <div class="detail-grid">
-      <article><span>01 · ESTRATEGIA</span><h3>Arquitectura y contenido</h3><p>Mapa del sitio, jerarquía de mensajes, llamadas a la acción y plan bilingüe.</p></article>
-      <article><span>02 · DISEÑO</span><h3>Experiencia visual</h3><p>Interfaz adaptable, animaciones, identidad visual inicial y componentes reutilizables.</p></article>
-      <article><span>03 · DESARROLLO</span><h3>Sitio administrable</h3><p>Implementación, sección Operaciones, formularios, rendimiento y analítica.</p></article>
-      <article><span>04 · LANZAMIENTO</span><h3>Entrega y capacitación</h3><p>Pruebas, publicación aprobada, manual breve y sesión para administrar contenido.</p></article>
+      <article><span>01 · SITIO PÚBLICO</span><h3>Experiencia responsive</h3><p>Inicio, Nosotros, Servicios, Aeronaves, Ubicaciones, Recursos, Operaciones y Contacto.</p></article>
+      <article><span>02 · ADMINISTRACIÓN</span><h3>Operaciones e historias</h3><p>Panel con autenticación, CRUD, borradores, destacados, portada, galería y visibilidad.</p></article>
+      <article><span>03 · IDENTIDAD</span><h3>Marca y comunicación</h3><p>Logotipo y variantes, favicon, paleta, tipografías y firma corporativa para correo.</p></article>
+      <article><span>04 · ENTREGA</span><h3>Implementación completa</h3><p>Código, base de datos, despliegue, SEO y seguridad básica, capacitación y guía de uso.</p></article>
     </div>`,
   timeline: `
     <div class="timeline">
-      <article><span>SEMANA 01</span><h3>Descubrimiento</h3><p>Alcance, contenidos, accesos, dominio, correo y referencias.</p></article>
-      <article><span>SEMANA 02</span><h3>Diseño</h3><p>Dirección visual, textos clave y prototipo navegable.</p></article>
-      <article><span>SEMANAS 03–04</span><h3>Implementación</h3><p>Desarrollo, carga inicial, bilingüe y panel de contenido.</p></article>
-      <article><span>SEMANA 05</span><h3>Validación</h3><p>Pruebas, capacitación y lanzamiento tras aprobación expresa.</p></article>
+      <article><span>SEMANA 01</span><h3>Descubrimiento</h3><p>Arquitectura, avance UI/UX, hosting, SSL e inventario.</p></article>
+      <article><span>SEMANA 02</span><h3>Demo navegable</h3><p>UI/UX, logo y firma aprobados; gestión de accesos.</p></article>
+      <article><span>SEMANA 03</span><h3>Secciones base</h3><p>Inicio, Nosotros y Servicios; seguimiento de dominio.</p></article>
+      <article><span>SEMANA 04</span><h3>Sitio beta</h3><p>Resto de secciones y Operaciones/Historias.</p></article>
+      <article><span>SEMANA 05</span><h3>Beta funcional</h3><p>Panel administrativo, CRUD, contenido y galería.</p></article>
+      <article><span>SEMANA 06</span><h3>Prelanzamiento</h3><p>i18n, seguridad, SEO y ajustes técnicos.</p></article>
+      <article><span>SEMANA 07</span><h3>Entrega</h3><p>QA, correcciones, capacitación y publicación.</p></article>
     </div>`,
+  payment: `
+    <div class="timeline payment-timeline">
+      <article><span>40% · INICIO</span><h3>Q 8,200.00</h3><p>Alta del proyecto e inicio formal del trabajo.</p></article>
+      <article><span>30% · DISEÑO</span><h3>Q 6,150.00</h3><p>Aprobación de UI/UX y demo navegable.</p></article>
+      <article><span>20% · BETA</span><h3>Q 4,100.00</h3><p>Beta funcional revisada y aprobada.</p></article>
+      <article><span>10% · ENTREGA</span><h3>Q 2,050.00</h3><p>Entrega y publicación del proyecto.</p></article>
+    </div>
+    <p class="prototype-note">El esquema aplica a los Q20,500.00 de servicios profesionales. La infraestructura se paga antes de contratar los servicios correspondientes.</p>`,
   care: `
     <div class="care-grid">
-      <article><span class="section-number">OPERACIÓN CONTINUA</span><h3>Mantenimiento y monitoreo</h3><ul><li>Actualizaciones técnicas y revisión preventiva</li><li>Monitoreo de disponibilidad y formularios</li><li>Optimización menor de rendimiento</li><li>Reporte mensual de estado</li></ul></article>
-      <article><span class="section-number">PROTECCIÓN</span><h3>Copias de seguridad</h3><p><strong>Diarias</strong> para base de datos y contenido dinámico, más respaldo <strong>semanal</strong> completo con retención acordada.</p><p>Restauración asistida según el plan. Hosting, dominio, licencias, correo y migración se confirman después de la evaluación técnica.</p></article>
+      <article><span class="section-number">Q500.00 / MES</span><h3>Plan de continuidad</h3><ul><li>Monitoreo básico de disponibilidad</li><li>Backups programados y verificación periódica</li><li>Revisión mensual de actualizaciones y seguridad</li><li>Verificación de formularios, panel y publicación</li></ul></article>
+      <article><span class="section-number">SOPORTE INCLUIDO</span><h3>Hasta una hora mensual</h3><p>Soporte técnico y cambios menores, acumulables únicamente dentro del mes vigente.</p><p><strong>No incluye</strong> rediseños, nuevas secciones, desarrollo de módulos ni carga masiva de contenido.</p></article>
     </div>`,
 };
 
@@ -130,7 +147,7 @@ proposalPanel.addEventListener('click', (event) => {
   const button = event.target.closest('[data-package]');
   if (button) showToast(`${button.dataset.package}: alcance disponible para comparar en la reunión de validación.`);
 });
-renderProposal('packages');
+renderProposal('investment');
 
 document.querySelectorAll('.resource-grid button').forEach((button) => button.addEventListener('click', () => showToast('Módulo demostrativo: se conectará a recursos oficiales aprobados.')));
 window.addEventListener('popstate', () => navigate(location.hash.slice(1) || 'inicio', false));
