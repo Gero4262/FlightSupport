@@ -1,4 +1,4 @@
-# AeroOps GT — código portable
+# Flight Support — código portable
 
 Este paquete contiene la demo interactiva de la propuesta de servicios de operaciones aeronáuticas.
 
@@ -47,8 +47,8 @@ No se requieren reglas de reescritura porque la navegación utiliza fragmentos c
 Copiar los archivos:
 
 ```bash
-sudo mkdir -p /var/www/aeroops
-sudo cp -r dist/* /var/www/aeroops/
+sudo mkdir -p /var/www/flight-support
+sudo cp -r dist/* /var/www/flight-support/
 ```
 
 Usar `nginx.conf.example` como referencia, reemplazar `propuesta.example.com` por el dominio real y validar Nginx:
@@ -65,8 +65,8 @@ El DNS del dominio debe apuntar a la IP del VPS. Después puede configurarse HTT
 Construir y ejecutar:
 
 ```bash
-docker build -t aeroops-web .
-docker run --rm -p 8080:80 aeroops-web
+docker build -t flight-support-web .
+docker run --rm -p 8080:80 flight-support-web
 ```
 
 Abrir `http://localhost:8080`.
@@ -91,7 +91,7 @@ Los archivos actualizados se copiarán a `dist/`.
 
 ## Antes de publicarlo para clientes
 
-- Sustituir `AeroOps GT` si no será el nombre definitivo.
+- Confirmar la versión final del logotipo de `Flight Support`.
 - Reemplazar el correo demostrativo `contacto@dominio-por-confirmar.gt`.
 - Confirmar precios, impuestos, alcance y condiciones comerciales.
 - Cargar enlaces oficiales y recursos aprobados.
